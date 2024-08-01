@@ -101,7 +101,9 @@ export default function Exchange({ }) {
         <>
          <ModelSetting isOpen={isModalOpen} onClose={closeModal} />
          <RecentSetting isOpen={isModalOpen2} onClose={closeModal2} />
-            <div className='p-10 flex flex-col  gap-5'>
+         <div className='bg-[rgba(77,77,77,0.05)] backdrop-blur-[8.5px] border-[rgba(255,255,255,0.09)] border h-[76vh] w-full rounded'>
+
+            <div className='p-10 flex flex-col  gap-5 '>
                 <div className='flex items-center justify-between w-full'>
                     <div className='text-4xl font-semibold'>Exchange</div>
                     <div className='flex gap-5'>
@@ -114,7 +116,7 @@ export default function Exchange({ }) {
 
             <div className='w-full flex flex-col h-64 items-center justify-between  px-5'>
 
-                <div className='bg-[rgba(12,12,12,0.54)] border-[rgba(255,255,255,0.09)] border rounded  h-24  w-full flex flex-col justify-between p-5'>
+                <div className='bg-[rgba(12,12,12,0.19)]  backdrop-blur-[8.5px] border-[rgba(255,255,255,0.09)] border rounded  h-24  w-full flex flex-col justify-between p-5'>
                     <div className='text-xs'>input</div>
                     <div className='flex w-full justify-between '>
                         <div className=''>
@@ -130,7 +132,7 @@ export default function Exchange({ }) {
                     </div>
                 </div>
 
-                <div className='bg-[rgba(12,12,12,0.54)] border-[rgba(255,255,255,0.09)] border rounded  h-24  w-full flex flex-col justify-between p-5'>
+                <div className='bg-[rgba(12,12,12,0.19)]   backdrop-blur-[8.5px] border-[rgba(255,255,255,0.09)] border rounded  h-24  w-full flex flex-col justify-between p-5'>
                     <div className='text-xs'>input</div>
                     <div className='flex w-full justify-between '>
                         <div className=''>
@@ -149,6 +151,7 @@ export default function Exchange({ }) {
                 <div className='bg-green-700 h-18  hover:bg-green-800  w-full text-center p-2 rounded-full cursor-pointer'>Unlock Wallet</div>
             </div>
             <div className='text-center text-xs p-2 font-thin'>Slippage Tolerance 0.1%  </div>
+            </div>
         </>
     )
 }
